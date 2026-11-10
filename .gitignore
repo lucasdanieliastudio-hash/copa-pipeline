@@ -1,0 +1,17 @@
+# ambiente e caches
+.venv/
+__pycache__/
+.pytest_cache/
+.ruff_cache/
+.coverage
+
+# banco gerado pelo pipeline (recriado do zero a partir de raw/)
+*.duckdb
+*.duckdb.wal
+
+# raw/ guarda so a versao compactada; nunca commitar CSV descompactado
+raw/*.csv
+
+# editor / sistema
+.DS_Store
+Thumbs.db
